@@ -7,4 +7,4 @@ jobs:
       - name: checkout repo
         uses: actions/checkout@v2
       - name: lint application
-        run: poetry run flake8 brain_games
+        run: make lint
