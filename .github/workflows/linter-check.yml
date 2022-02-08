@@ -1,10 +1,10 @@
 name: linter-check
 on: push
 jobs:
-  my-job:
+  linter-check:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
       - name: lint application
-        run: make lint
+        run: poetry run flake8 brain_games
