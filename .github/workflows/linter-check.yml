@@ -1,4 +1,5 @@
 name: linter-check
+
 on: push
 jobs:
   linter-check:
