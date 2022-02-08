@@ -4,5 +4,7 @@ jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
-      - name: my-step
-        run: echo "linterrr"
+      - name: checkout repo
+        uses: actions/checkout@v2
+      - name: lint application
+        run: make lint
