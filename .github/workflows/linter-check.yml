@@ -8,3 +8,4 @@ jobs:
         uses: actions/checkout@v2
       - name: lint application
         run: make lint
+        
