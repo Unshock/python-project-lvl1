@@ -1,4 +1,4 @@
-#игра "Проверка на четность"
+# игра "Проверка на четность"
 import prompt
 from random import randint
 
@@ -34,7 +34,8 @@ def is_even():
             print('Correct!')
             i += 1
         else:
-            print("'{}' is wrong answer ;(. Correct answer was '{}'.\nLet's try again, {}!".format(answer, right_answer, name))
+            print("'{}' is wrong answer ;(. Correct answer was '{}'.\n"
+                  "Let's try again, {}!".format(answer, right_answer, name))
             return
     print('Congratulations, ' + name + '!')
 
@@ -43,6 +44,7 @@ def main():
     greet()
     welcome_user()
     is_even()
+
 
 if __name__ == '__main__':
     main()
