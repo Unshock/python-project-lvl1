@@ -8,7 +8,8 @@ packages = [
 ]
 
 [tool.poetry.scripts]
-brain_games = "brain_games.scripts.brain_games:main"
+brain-games = "brain_games.scripts.brain_games:main"
+brain-even = "brain_games.games.brain_even:main"
 
 [tool.poetry.dependencies]
 python = "^3.8"
