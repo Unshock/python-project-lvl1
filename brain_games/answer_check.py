@@ -4,6 +4,6 @@ def answer_check(answer, right_answer, name, i):
         return True
     else:
         print("'{}' is wrong answer ;(. Correct answer was '{}'.\n"
-              "Let's try again, {}!".format(answer, str(right_answer), str(name)))
+              "Let's try again, {}!"
+              .format(answer, str(right_answer), str(name)))
         return False
-
