@@ -1,6 +1,8 @@
-#игра "Проверка на четность"
+# игра "Проверка на четность"
+
 import prompt
 from random import randint
+
 
 def greet():
     print("Welcome to the Brain Games!")
@@ -10,7 +12,7 @@ def welcome_user():
     name = prompt.string('May I have your name? ')
     print('Hello, ' + name)
     return name
-    
+
 
 def is_even():
     name = welcome_user()
@@ -33,7 +35,7 @@ def is_even():
             i += 1
         else:
             print("'{}' is wrong answer ;(. Correct answer was '{}'.\n"
-            "Let's try again, {}!".format(answer, right_answer, name))
+                  "Let's try again, {}!".format(answer, right_answer, name))
             return
     print('Congratulations, ' + name + '!')
 
@@ -41,6 +43,7 @@ def is_even():
 def main():
     greet()
     is_even()
+
 
 if __name__ == '__main__':
     main()
