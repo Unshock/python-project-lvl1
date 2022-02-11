@@ -13,10 +13,10 @@ def welcome_user():
     
 
 def is_even():
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-
-    i = 1
     name = welcome_user()
+
+    print('Answer "yes" if the number is even, otherwise answer "no".')
+    i = 1
 
     while i < 4:
         question_number = randint(1, 100)
