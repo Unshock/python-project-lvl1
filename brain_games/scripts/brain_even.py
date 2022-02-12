@@ -10,23 +10,16 @@ from brain_games.answer_check import answer_check
 def game():
     name = welcome_user()
 
-    question_string, question, right_answer = game_logic()
-
-    print(str(question_string))
+    print(game_logic()[0])
 
     i = 1
+    number_of_iterations = 3
 
-    while i < 4:
+    while i <= number_of_iterations:
+        question, right_answer = game_logic()[1:]
 
-        question_string, question, right_answer = game_logic()
-        print('Question: ' + str(question))
-        answer = prompt.string('Your answer: ')
-        if answer_check(answer, right_answer, name, i):
-            i += 1
-        else:
-            return
-
-    print('Congratulations, ' + name + '!')
+        i = answer_check(number_of_iterations,
+                         question, right_answer, name, i)
 
 
 def main():
