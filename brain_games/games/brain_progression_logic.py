@@ -5,7 +5,7 @@ from random import randint
 
 def game_logic():
 
-    question_string = 'What is the result of the expression?'
+    question_string = 'What number is missing in the progression?'
     i = 0
     question = ''
     row_range = randint(6, 12)
