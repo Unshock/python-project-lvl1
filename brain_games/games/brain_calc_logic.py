@@ -9,8 +9,9 @@ def game_logic():
     num1 = randint(10, 30)
     num2 = randint(5, 20)
 
-    question_pull = (str(num1) + ' + ' + str(num2), str(num1) +
-                     ' - ' + str(num2), str(num1) + ' * ' + str(num2))
+    question_pull = (str(num1) + ' + ' + str(num2),
+                     str(num1) + ' - ' + str(num2),
+                     str(num1) + ' * ' + str(num2))
     question_type = randint(0, 2)
 
     question = question_pull[question_type]
