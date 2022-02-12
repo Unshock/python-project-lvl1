@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "brain-games"
+name = "hexlet-code"
 version = "0.1.0"
 description = "project-lvl1"
 authors = ["Victor Nedashkovskiy <nevial@bk.ru>"]
