@@ -1,6 +1,5 @@
 # игра "Калькулятор"
 
-import prompt
 from brain_games.games.brain_calc_logic import game_logic
 from brain_games.cli import welcome_user
 from brain_games.greet import greet

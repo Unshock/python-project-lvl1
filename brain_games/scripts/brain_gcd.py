@@ -1,6 +1,5 @@
 # игра "Проверка на четность"
 
-import prompt
 from brain_games.games.brain_gcd_logic import game_logic
 from brain_games.cli import welcome_user
 from brain_games.greet import greet

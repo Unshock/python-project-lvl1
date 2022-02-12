@@ -15,6 +15,8 @@ def answer_check(number_of_iterations, question, right_answer, name, i):
             return i
     else:
         print("'{}' is wrong answer ;(. Correct answer was '{}'.\n"
-              "Let's try again, {}!".format(answer, str(right_answer), str(name)))
+              "Let's try again, {}!"
+              .format(answer, str(right_answer), str(name)))
+
         i = number_of_iterations + 1
         return i
