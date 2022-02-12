@@ -19,7 +19,6 @@ def game_logic():
         if num1 % i == 0 and num2 % i == 0:
             right_answer = str(i)
             i = 0
-            print(right_answer)
         else:
             i -= 1
 
