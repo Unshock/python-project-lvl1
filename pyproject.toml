@@ -2,8 +2,8 @@
 name = "brain-games"
 version = "0.1.0"
 description = "project-lvl1"
-authors = ["Victor Nedashkovskiy nevial@bk.ru"]
-repository = ["https://github.com/Unshock/python-project-lvl1"]
+authors = ["Victor Nedashkovskiy <nevial@bk.ru>"]
+repository = 'https://github.com/Unshock/python-project-lvl1'
 classifiers = [
     "License :: Freeware",
     "Programming Language :: Python",
