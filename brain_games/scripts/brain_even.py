@@ -1,29 +1,12 @@
 # игра "Проверка на четность"
 
-from brain_games.games.brain_even_logic import game_logic
-from brain_games.cli import welcome_user
-from brain_games.greet import greet
-from brain_games.answer_check import answer_check
 
-
-def game():
-    name = welcome_user()
-
-    print(game_logic()[0])
-
-    i = 1
-    number_of_iterations = 3
-
-    while i <= number_of_iterations:
-        question, right_answer = game_logic()[1:]
-
-        i = answer_check(number_of_iterations,
-                         question, right_answer, name, i)
+import brain_games.games.brain_even_logic as even
+from brain_games.game_engine import engine
 
 
 def main():
-    greet()
-    game()
+    engine(even.TASK, even.q_and_a)
 
 
 if __name__ == '__main__':

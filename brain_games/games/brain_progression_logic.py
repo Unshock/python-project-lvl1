@@ -5,7 +5,7 @@ from random import randint
 
 def game_logic():
 
-    question_string = 'What number is missing in the progression?'
+    TASK = 'What number is missing in the progression?'
     i = 0
     question = ''
     row_range = randint(6, 12)
@@ -30,4 +30,8 @@ def game_logic():
     # 'Верный ответ ' + str(right_answer) + '\n' +
     # 'Кодовый элемент: ' + str(encrypted_element))
 
-    return (question_string, question, right_answer)
+    return TASK, (question, right_answer)
+
+
+TASK = game_logic()[0]
+q_and_a = (game_logic()[1], game_logic()[1], game_logic()[1])

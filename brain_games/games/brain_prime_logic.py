@@ -4,8 +4,8 @@ from random import randint
 
 
 def game_logic():
-    question_string = ('Answer "yes" if given number is prime.'
-                       ' otherwise answer "no".')
+    TASK = ('Answer "yes" if given number is prime.'
+            ' otherwise answer "no".')
     question = randint(1, 100)
     count = 0
     i = question // 2
@@ -22,10 +22,14 @@ def game_logic():
             i -= 1
             if count > 1:
                 right_answer = 'no'
-                return (question_string, question, right_answer)
+                return TASK, (question, right_answer)
         else:
             i -= 1
 
     right_answer = 'yes'
 
-    return (question_string, question, right_answer)
+    return TASK, (question, right_answer)
+
+
+TASK = game_logic()[0]
+q_and_a = (game_logic()[1], game_logic()[1], game_logic()[1])

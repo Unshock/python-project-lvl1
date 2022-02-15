@@ -4,7 +4,7 @@ from random import randint
 
 
 def game_logic():
-    question_string = 'Find the greatest common divisor of given numbers.'
+    TASK = 'Find the greatest common divisor of given numbers.'
 
     num1 = randint(20, 35)
     num2 = randint(5, 25)
@@ -22,4 +22,8 @@ def game_logic():
         else:
             i -= 1
 
-    return (question_string, question, right_answer)
+    return TASK, (question, right_answer)
+
+
+TASK = game_logic()[0]
+q_and_a = (game_logic()[1], game_logic()[1], game_logic()[1])
