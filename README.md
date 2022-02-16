@@ -19,7 +19,7 @@
 ### Brain-games install
 The project exists only on ***github*** and for usage could be installed using ***pip*** command:
 
-    python3 -m pip install --user git+https://github.com/Unshock/python-project-lvl1/tree/main/brain_games/scripts/*.py
+    python3 -m pip install --user git+https://github.com/Unshock/python-project-lvl1.git
 
 ### Brain-games run
 Run of the games is carried out by the commands below: 
