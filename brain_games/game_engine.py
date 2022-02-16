@@ -1,6 +1,6 @@
 import prompt
 
-NUMBER_OF_ITERATIONS = 2
+NUMBER_OF_ITERATIONS = 3
 
 
 def engine(TASK, game_logic):
