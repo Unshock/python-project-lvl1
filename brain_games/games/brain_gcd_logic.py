@@ -1,10 +1,12 @@
-# логика игры "Наибольший общий делитель"
+# Логика игры "Наибольший общий делитель"
 
 from random import randint
 
 
+TASK = 'Find the greatest common divisor of given numbers.'
+
+
 def game_logic():
-    TASK = 'Find the greatest common divisor of given numbers.'
 
     num1 = randint(20, 35)
     num2 = randint(5, 25)
@@ -22,8 +24,4 @@ def game_logic():
         else:
             i -= 1
 
-    return TASK, (question, right_answer)
-
-
-TASK = game_logic()[0]
-q_and_a = (game_logic()[1], game_logic()[1], game_logic()[1])
+    return (question, right_answer)

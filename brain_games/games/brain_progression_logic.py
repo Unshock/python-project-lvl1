@@ -3,9 +3,11 @@
 from random import randint
 
 
+TASK = 'What number is missing in the progression?'
+
+
 def game_logic():
 
-    TASK = 'What number is missing in the progression?'
     i = 0
     question = ''
     row_range = randint(6, 12)
@@ -30,8 +32,4 @@ def game_logic():
     # 'Верный ответ ' + str(right_answer) + '\n' +
     # 'Кодовый элемент: ' + str(encrypted_element))
 
-    return TASK, (question, right_answer)
-
-
-TASK = game_logic()[0]
-q_and_a = (game_logic()[1], game_logic()[1], game_logic()[1])
+    return (question, right_answer)

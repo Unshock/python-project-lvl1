@@ -3,8 +3,10 @@
 from random import randint
 
 
+TASK = 'What is the result of the expression?'
+
+
 def game_logic():
-    TASK = 'What is the result of the expression?'
 
     num1 = randint(10, 30)
     num2 = randint(5, 20)
@@ -23,8 +25,4 @@ def game_logic():
     else:
         right_answer = num1 * num2
 
-    return TASK, (question, right_answer)
-
-
-TASK = game_logic()[0]
-q_and_a = (game_logic()[1], game_logic()[1], game_logic()[1])
+    return (question, right_answer)

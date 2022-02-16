@@ -6,7 +6,7 @@ from brain_games.game_engine import engine
 
 
 def main():
-    engine(gcd.TASK, gcd.q_and_a)
+    engine(gcd.TASK, gcd.game_logic)
 
 
 if __name__ == '__main__':
