@@ -1,32 +1,32 @@
 import prompt
 
-NUMBER_OF_ITERATIONS = 3
-
 
 def engine(TASK, game_logic):
 
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
-    print('Hello, ' + name)
+    print(f'Hello, {name}!')
 
     print(TASK)
 
-    i = 0
-    while i < NUMBER_OF_ITERATIONS:
+    game_rounds_count = 3
+
+    for round_number in range(0, game_rounds_count):
+
         q_and_a = game_logic()
         question = str(q_and_a[0])
-        right_answer = str(q_and_a[1])
+        answer = str(q_and_a[1])
 
         print('Question: ' + question)
-        answer = prompt.string('Your answer: ')
-        if answer == right_answer:
+        player_answer = prompt.string('Your answer: ')
+
+        if answer == player_answer:
             print('Correct!')
-            i += 1
-            if i == NUMBER_OF_ITERATIONS:
-                print('Congratulations, ' + name + '!')
+            if round_number == game_rounds_count - 1:
+                print(f'Congratulations, {name}!')
 
         else:
             print("'{}' is wrong answer ;(. Correct answer was '{}'.\n"
                   "Let's try again, {}!"
-                  .format(answer, right_answer, str(name)))
-            i = NUMBER_OF_ITERATIONS
+                  .format(player_answer, answer, str(name)))
+            break
