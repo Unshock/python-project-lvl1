@@ -14,10 +14,10 @@ def is_prime(question):
     count = 0
 
     for i in range(2, question // 2):
-        if question % i == 0:
-            count += 1
-            if count > 0:
-                return False
+        count = count + 1 if not question % i else count + 0
+
+        if count > 0:
+            return False
     return True
 
 
