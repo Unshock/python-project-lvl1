@@ -11,12 +11,8 @@ def is_prime(question):
     if question == 1:
         return False
 
-    count = 0
-
     for i in range(2, question // 2):
         if not question % i:
-            count += 1
-        if count > 0:
             return False
     return True
 
