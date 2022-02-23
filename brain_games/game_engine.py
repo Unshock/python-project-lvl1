@@ -1,7 +1,7 @@
 import prompt
 
 
-def engine(TASK, game_logic):
+def run_engine(TASK, get_q_and_a):
 
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
@@ -13,7 +13,7 @@ def engine(TASK, game_logic):
 
     for round_number in range(0, game_rounds_count):
 
-        q_and_a = game_logic()
+        q_and_a = get_q_and_a()
         question = str(q_and_a[0])
         answer = str(q_and_a[1])
 
