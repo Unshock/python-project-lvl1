@@ -2,8 +2,8 @@
 # игра "Наибольший общий делитель"
 
 
-import brain_games.games.gcd_logic as gcd
-from brain_games.game_engine import run_engine
+import brain_games.games.gcd as gcd
+from brain_games.engine import run_engine
 
 
 def main():

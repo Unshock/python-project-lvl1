@@ -2,8 +2,8 @@
 # игра "Простое ли число?"
 
 
-import brain_games.games.prime_logic as prime
-from brain_games.game_engine import run_engine
+import brain_games.games.prime as prime
+from brain_games.engine import run_engine
 
 
 def main():

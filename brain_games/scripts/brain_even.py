@@ -2,8 +2,8 @@
 # игра "Проверка на четность"
 
 
-import brain_games.games.even_logic as even
-from brain_games.game_engine import run_engine
+import brain_games.games.even as even
+from brain_games.engine import run_engine
 
 
 def main():

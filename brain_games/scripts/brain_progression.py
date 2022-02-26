@@ -2,8 +2,8 @@
 # игра "Арифметическая прогрессия"
 
 
-import brain_games.games.progression_logic as progression
-from brain_games.game_engine import run_engine
+import brain_games.games.progression as progression
+from brain_games.engine import run_engine
 
 
 def main():

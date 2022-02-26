@@ -2,8 +2,8 @@
 # игра "Калькулятор"
 
 
-import brain_games.games.calc_logic as calc
-from brain_games.game_engine import run_engine
+import brain_games.games.calc as calc
+from brain_games.engine import run_engine
 
 
 def main():

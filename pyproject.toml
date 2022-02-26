@@ -15,11 +15,11 @@ packages = [
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
-brain-even = "brain_games.scripts.even:main"
-brain-calc = "brain_games.scripts.calc:main"
-brain-gcd = "brain_games.scripts.gcd:main"
-brain-progression = "brain_games.scripts.progression:main"
-brain-prime = "brain_games.scripts.prime:main"
+brain-even = "brain_games.scripts.brain_even:main"
+brain-calc = "brain_games.scripts.brain_calc:main"
+brain-gcd = "brain_games.scripts.brain_gcd:main"
+brain-progression = "brain_games.scripts.brain_progression:main"
+brain-prime = "brain_games.scripts.brain_prime:main"
 
 
 [tool.poetry.dependencies]
